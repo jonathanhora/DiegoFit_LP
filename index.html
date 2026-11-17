@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Fit — Treino personalizado</title>
+<meta name="description" content="Treino personalizado no seu ritmo, com acompanhamento toda semana. Comece por uma avaliação física gratuita.">
+<meta name="theme-color" content="#0F1210">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#topo">Pular para o conteúdo</a>
+<div style="min-height: 100vh; background: #0F1210; color: #F2F5F2; font-family: 'Barlow', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(15,18,16,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(242,245,242,0.12);">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px;">
+      <a href="#topo" aria-label="Diego Fit, início" translate="no" style="display: inline-flex; align-items: center; gap: 10px; height: 44px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 28px; line-height: 32px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #F2F5F2;">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 22 12 6M11 22 19 6M18 22 26 6" stroke="#3DEB4C" stroke-width="3.5" stroke-linecap="round"></path></svg>
+        Diego<span style="color: #3DEB4C;">Fit</span>
+      </a>
+      <nav aria-label="Principal" class="desk-only" style="align-items: center; gap: 8px;">
+        <a class="nav-link" href="#como-funciona">Como funciona</a>
+        <a class="nav-link" href="#objetivos">Objetivos</a>
+        <a class="nav-link" href="#resultados">Resultados</a>
+        <a class="nav-link" href="#planos">Planos</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <a class="btn btn-primary header-cta" href="#agendar">Agendar avaliação grátis</a>
+        <button class="icon-btn mob-only" type="button" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-panel" style="color: #F2F5F2;">
+          <svg class="ico-close" hidden width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+          <svg class="ico-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+      <nav id="menu-panel" aria-label="Menu" class="mob-only menu-full" hidden>
+        <div class="menu-links">
+          <a class="menu-link" href="#como-funciona" data-close-menu=""><span class="menu-idx">01</span>Como funciona<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a class="menu-link" href="#objetivos" data-close-menu=""><span class="menu-idx">02</span>Objetivos<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a class="menu-link" href="#resultados" data-close-menu=""><span class="menu-idx">03</span>Resultados<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a class="menu-link" href="#planos" data-close-menu=""><span class="menu-idx">04</span>Planos<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a class="menu-link" href="#sobre" data-close-menu=""><span class="menu-idx">05</span>Sobre<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+        <div class="menu-foot">
+          <a class="btn btn-primary btn-lg" href="#agendar" data-close-menu="" style="width: 100%;">Agendar avaliação grátis</a>
+          <p style="margin: 0; font-size: 14px; line-height: 20px; color: #B3BCB4; text-align: center;">Avaliação física gratuita e sem compromisso.</p>
+        </div>
+      </nav>
+
+  <main id="topo">
+    <!-- Hero: foto da competição em tela cheia -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-img" data-anim="hero-img" src="images/hero.webp" width="2000" height="1125" fetchpriority="high" alt="Atletas treinando em pista indoor durante uma competição funcional">
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,18,16,0.95) 0%, rgba(15,18,16,0.82) 38%, rgba(15,18,16,0.25) 72%, rgba(15,18,16,0.1) 100%);"></div>
+      <div aria-hidden="true" style="position: absolute; inset: auto 0 0 0; height: 200px; background: linear-gradient(0deg, #0F1210 0%, rgba(15,18,16,0) 100%);"></div>
+      <div class="container" style="position: relative; padding-top: 72px; padding-bottom: 88px; display: flex; flex-direction: column; gap: 28px;">
+        <h1 id="hero-title" class="hero-title">
+          <span class="line"><span data-anim="hero-line">Seu corpo é <span class="hl">mais</span></span></span>
+          <span class="line"><span data-anim="hero-line">capaz do que</span></span>
+          <span class="line"><span data-anim="hero-line">você imaginava</span></span>
+        </h1>
+        <p class="lead" data-anim="hero-fade" style="max-width: 44ch; color: #D3DAD4;">Treino personalizado no seu ritmo, com acompanhamento toda semana. O primeiro passo é uma avaliação física gratuita, sem compromisso.</p>
+        <div class="hero-ctas" data-anim="hero-fade" style="display: flex; gap: 16px; margin-top: 4px;">
+          <a class="btn btn-primary btn-lg" href="#agendar">Agendar avaliação grátis<svg class="arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a class="btn btn-secondary btn-lg" href="#planos">Ver planos</a>
+        </div>
+        <dl data-anim="hero-fade" style="display: flex; gap: 48px; margin: 12px 0 0;">
+          <div style="display: flex; flex-direction: column-reverse; gap: 4px;">
+            <dt style="font-size: 14px; line-height: 20px; color: #B3BCB4;">alunos acompanhados</dt>
+            <dd style="margin: 0;" class="stat-num">+<span data-count="500">500</span></dd>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse; gap: 4px;">
+            <dt style="font-size: 14px; line-height: 20px; color: #B3BCB4;">anos de experiência</dt>
+            <dd style="margin: 0;" class="stat-num"><span data-count="8">8</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Faixa em movimento -->
+    <div class="marquee" id="marquee" role="region" aria-label="Destaques">
+      <div class="marquee-track" aria-hidden="true">
+        <span class="marquee-item">Avaliação física grátis<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Treino personalizado<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Acompanhamento semanal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Reavaliação mensal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>        <span class="marquee-item">Avaliação física grátis<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Treino personalizado<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Acompanhamento semanal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Reavaliação mensal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>        <span class="marquee-item">Avaliação física grátis<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Treino personalizado<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Acompanhamento semanal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Reavaliação mensal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>        <span class="marquee-item">Avaliação física grátis<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Treino personalizado<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Acompanhamento semanal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+        <span class="marquee-item">Reavaliação mensal<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="#0F1210" stroke-width="4"></path></svg></span>
+      </div>
+      <p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">Avaliação física grátis, treino personalizado, acompanhamento semanal e reavaliação mensal.</p>
+    </div>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="section" aria-labelledby="cf-title" style="padding-top: 128px; padding-bottom: 128px; background: #0F1210;">
+      <div class="container" style="display: flex; flex-direction: column; gap: 56px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px;">
+          <h2 id="cf-title" class="h2" style="max-width: 12ch;">Da avaliação ao treino em <span class="hl">4 passos</span></h2>
+          <p class="lead" style="max-width: 40ch; color: #B3BCB4;">Tudo começa pela avaliação gratuita. É nela que eu entendo seu momento e monto o plano.</p>
+        </div>
+        <ol class="steps" data-anim="steps">
+          <div class="track" aria-hidden="true"><div class="track-fill" data-anim="track"></div></div>
+          <li style="position: relative; display: flex; flex-direction: column; gap: 12px;">
+            <span class="step-dot" aria-hidden="true"></span>
+            <p class="step-num" aria-hidden="true">01</p>
+            <h3 class="display" style="font-size: 28px; line-height: 32px; color: #F2F5F2;">Avaliação gratuita</h3>
+            <p class="body" style="color: #B3BCB4;">Avaliamos condicionamento, histórico, rotina e objetivos para definir a estratégia.</p>
+          </li>
+          <li style="position: relative; display: flex; flex-direction: column; gap: 12px;">
+            <span class="step-dot" aria-hidden="true"></span>
+            <p class="step-num" aria-hidden="true">02</p>
+            <h3 class="display" style="font-size: 28px; line-height: 32px; color: #F2F5F2;">Plano sob medida</h3>
+            <p class="body" style="color: #B3BCB4;">Um programa feito para o seu nível, sua agenda e suas metas.</p>
+          </li>
+          <li style="position: relative; display: flex; flex-direction: column; gap: 12px;">
+            <span class="step-dot" aria-hidden="true"></span>
+            <p class="step-num" aria-hidden="true">03</p>
+            <h3 class="display" style="font-size: 28px; line-height: 32px; color: #F2F5F2;">Ajustes semanais</h3>
+            <p class="body" style="color: #B3BCB4;">Acompanho sua evolução, corrijo a execução e ajusto a intensidade.</p>
+          </li>
+          <li style="position: relative; display: flex; flex-direction: column; gap: 12px;">
+            <span class="step-dot" aria-hidden="true"></span>
+            <p class="step-num" aria-hidden="true">04</p>
+            <h3 class="display" style="font-size: 28px; line-height: 32px; color: #F2F5F2;">Reavaliação mensal</h3>
+            <p class="body" style="color: #B3BCB4;">Todo mês medimos o progresso e atualizamos o plano.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Modalidades: um treino para cada objetivo -->
+    <section id="objetivos" class="section" aria-labelledby="obj-title" style="padding-top: 128px; padding-bottom: 128px; background: #171B18;">
+      <div class="container" style="display: flex; flex-direction: column; gap: 48px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px;">
+          <h2 id="obj-title" class="h2" style="max-width: 13ch;">Um treino para <span class="hl">cada objetivo</span></h2>
+          <p class="lead" style="max-width: 40ch; color: #B3BCB4;">Diga o que você quer conquistar. A avaliação mostra o caminho, e o treino é montado em cima disso.</p>
+        </div>
+        <ul class="cats" style="list-style: none; margin: 0; padding: 0;">
+          <li class="cat-card">
+            <a href="#agendar" class="cat-link">
+              <img src="images/cat-emag.webp" width="900" height="1200" loading="lazy" alt="Homem correndo ao ar livre no fim de tarde" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%;">
+              <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,18,16,0.25) 0%, rgba(15,18,16,0) 30%, rgba(15,18,16,0.55) 58%, rgba(15,18,16,0.96) 100%);"></span>
+              <span style="position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; background: rgba(15,18,16,0.78); backdrop-filter: blur(8px); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F2F5F2;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4a2 2 0 1 0 0-.01"></path><path d="m7 21 3-6 3 2 1-5 4 2"></path><path d="m9 11 3-3 3 2"></path></svg>Emagrecimento</span>
+              <span class="cat-plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+              <span style="position: absolute; left: 20px; right: 20px; bottom: 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 32px; text-transform: uppercase; color: #F2F5F2;">Queimar gordura com um treino que <span class="hl">cabe na rotina</span></span>
+            </a>
+          </li>
+          <li class="cat-card">
+            <a href="#agendar" class="cat-link">
+              <img src="images/cat-massa.webp" width="900" height="1200" loading="lazy" alt="Homem fazendo agachamento com barra na academia" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 40%;">
+              <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,18,16,0.25) 0%, rgba(15,18,16,0) 30%, rgba(15,18,16,0.55) 58%, rgba(15,18,16,0.96) 100%);"></span>
+              <span style="position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; background: rgba(15,18,16,0.78); backdrop-filter: blur(8px); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F2F5F2;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"></path></svg>Ganhar massa</span>
+              <span class="cat-plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+              <span style="position: absolute; left: 20px; right: 20px; bottom: 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 32px; text-transform: uppercase; color: #F2F5F2;">Ganhar massa com a <span class="hl">carga certa</span> em cada fase</span>
+            </a>
+          </li>
+          <li class="cat-card">
+            <a href="#agendar" class="cat-link">
+              <img src="images/cat-mob.webp" width="900" height="1200" loading="lazy" alt="Mulher alongando em um tapete" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;">
+              <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,18,16,0.25) 0%, rgba(15,18,16,0) 30%, rgba(15,18,16,0.55) 58%, rgba(15,18,16,0.96) 100%);"></span>
+              <span style="position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; background: rgba(15,18,16,0.78); backdrop-filter: blur(8px); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F2F5F2;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4a2 2 0 1 0 0-.01"></path><path d="M4 20c2-4 5-6 8-6s6 2 8 6"></path><path d="M8 11h8"></path></svg>Mobilidade</span>
+              <span class="cat-plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+              <span style="position: absolute; left: 20px; right: 20px; bottom: 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 32px; text-transform: uppercase; color: #F2F5F2;">Mover melhor e <span class="hl">treinar sem dor</span></span>
+            </a>
+          </li>
+          <li class="cat-card">
+            <a href="#agendar" class="cat-link">
+              <img src="images/cat-perf.webp" width="900" height="1200" loading="lazy" alt="Corredor saindo em sprint numa pista de atletismo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%;">
+              <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,18,16,0.25) 0%, rgba(15,18,16,0) 30%, rgba(15,18,16,0.55) 58%, rgba(15,18,16,0.96) 100%);"></span>
+              <span style="position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; background: rgba(15,18,16,0.78); backdrop-filter: blur(8px); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F2F5F2;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7Z"></path></svg>Performance</span>
+              <span class="cat-plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+              <span style="position: absolute; left: 20px; right: 20px; bottom: 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 32px; text-transform: uppercase; color: #F2F5F2;">Mais fôlego e força para <span class="hl">competir</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Resultados: seção clara -->
+    <section id="resultados" class="results" data-anim="results" aria-labelledby="res-title" style="background: #EEF2EC; color: #0F1210;">
+      <div class="results-sticky">
+      <div class="container" style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <h2 id="res-title" class="h2" style="color: #0F1210; max-width: 20ch;">Resultados de quem <span class="mark" data-anim="mark">treina comigo</span></h2>
+          <p class="lead" style="color: #4A544B;">O que alguns alunos conquistaram com o acompanhamento.</p>
+        </div>
+        <div class="testi-progress" aria-hidden="true">
+          <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 28px; line-height: 32px; color: #0F1210; font-variant-numeric: tabular-nums;"><span data-anim="testi-count">01</span><span style="color: #4A544B;"> / 05</span></span>
+          <span class="testi-bar"><span class="testi-bar-fill" data-anim="testi-bar"></span></span>
+        </div>
+      </div>
+      <div class="testi-viewport">
+        <ul id="testi-row" class="testi-row" data-anim="testi-row" aria-label="Depoimentos de alunos (role para o lado)" tabindex="0" style="list-style: none; margin: 0;">
+          <li class="testi-card" style="display: flex; flex-direction: column; gap: 16px; padding: 12px 12px 24px; background: #FFFFFF; border-radius: 16px;">
+            <div class="testi-photo"><img src="images/joao.webp" width="600" height="900" loading="lazy" alt="Foto de João Henrique" class="testi-img" style="display: block; width: 100%; object-fit: cover; object-position: 50% 25%;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 12px;">
+              <p class="display" style="font-size: 32px; line-height: 36px; color: #0F1210;"><span class="mark">−12 kg</span> em 6 meses</p>
+              <p class="body" style="color: #4A544B;">“Achei que nunca conseguiria criar uma rotina de treinos.”</p>
+              <p style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #0F1210;">João Henrique</p>
+            </div>
+          </li>
+          <li class="testi-card" style="display: flex; flex-direction: column; gap: 16px; padding: 12px 12px 24px; background: #FFFFFF; border-radius: 16px;">
+            <div class="testi-photo"><img src="images/mariana.webp" width="600" height="900" loading="lazy" alt="Foto de Mariana Oliveira" class="testi-img" style="display: block; width: 100%; object-fit: cover; object-position: 50% 25%;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 12px;">
+              <p class="display" style="font-size: 32px; line-height: 36px; color: #0F1210;"><span class="mark">+5 kg</span> de massa muscular</p>
+              <p class="body" style="color: #4A544B;">“Os treinos foram planejados exatamente para os meus objetivos.”</p>
+              <p style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #0F1210;">Mariana Oliveira</p>
+            </div>
+          </li>
+          <li class="testi-card" style="display: flex; flex-direction: column; gap: 16px; padding: 12px 12px 24px; background: #FFFFFF; border-radius: 16px;">
+            <div class="testi-photo"><img src="images/rafael.webp" width="561" height="685" loading="lazy" alt="Foto de Rafael Costa" class="testi-img" style="display: block; width: 100%; object-fit: cover; object-position: 50% 25%;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 12px;">
+              <p class="display" style="font-size: 32px; line-height: 36px; color: #0F1210;">Performance no <span class="mark">HYROX</span></p>
+              <p class="body" style="color: #4A544B;">“Ganhei resistência, força e confiança para competir.”</p>
+              <p style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #0F1210;">Rafael Costa</p>
+            </div>
+          </li>
+          <li class="testi-card" style="display: flex; flex-direction: column; gap: 16px; padding: 12px 12px 24px; background: #FFFFFF; border-radius: 16px;">
+            <div class="testi-photo"><img src="images/camila.webp" width="600" height="900" loading="lazy" alt="Foto de Camila Ferreira" class="testi-img" style="display: block; width: 100%; object-fit: cover; object-position: 50% 25%;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 12px;">
+              <p class="display" style="font-size: 32px; line-height: 36px; color: #0F1210;"><span class="mark">−8%</span> de gordura corporal</p>
+              <p class="body" style="color: #4A544B;">“O acompanhamento constante fez toda a diferença.”</p>
+              <p style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #0F1210;">Camila Ferreira</p>
+            </div>
+          </li>
+          <li class="testi-card" style="display: flex; flex-direction: column; gap: 16px; padding: 12px 12px 24px; background: #FFFFFF; border-radius: 16px;">
+            <div class="testi-photo"><img src="images/lucas.webp" width="600" height="900" loading="lazy" alt="Foto de Lucas Martins" class="testi-img" style="display: block; width: 100%; object-fit: cover; object-position: 50% 25%;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 12px;">
+              <p class="display" style="font-size: 32px; line-height: 36px; color: #0F1210;">Treinos <span class="mark">sem dores</span></p>
+              <p class="body" style="color: #4A544B;">“Hoje treino com segurança e evolução contínua.”</p>
+              <p style="margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #0F1210;">Lucas Martins</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="section" aria-labelledby="planos-title" style="padding-top: 128px; padding-bottom: 128px; background: #171B18;">
+      <div class="container" style="display: flex; flex-direction: column; gap: 56px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px;">
+          <h2 id="planos-title" class="h2" style="max-width: 13ch;">Escolha o <span class="hl">ritmo</span> da sua semana</h2>
+          <p class="lead" style="max-width: 40ch; color: #B3BCB4;">Todos os planos começam pela avaliação gratuita. Se precisar, ajustamos o plano depois dela.</p>
+        </div>
+        <div class="plans">
+          <article class="plan" style="display: flex; flex-direction: column; gap: 24px; padding: 32px; background: #0F1210; border: 1px solid rgba(242,245,242,0.12); border-radius: 16px;">
+            <div class="plan-head" style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px;">
+                <h3 class="display" style="font-size: 40px; line-height: 44px; color: #F2F5F2;">Start</h3>
+                <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; line-height: 24px; color: #3DEB4C;">2x/sem</span>
+              </div>
+              <p class="body" style="color: #B3BCB4;">Para criar a rotina de treinos com segurança, no seu ritmo.</p>
+            </div>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 4px;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 48px; line-height: 52px; color: #F2F5F2;">R$ 380</span><span style="font-size: 16px; line-height: 24px; color: #B3BCB4;">/mês</span></p>
+            <ul style="list-style: none; margin: 0; padding: 24px 0 0; border-top: 1px solid rgba(242,245,242,0.12); display: flex; flex-direction: column; gap: 12px; flex-grow: 1;">
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Avaliação física inicial</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Treinos personalizados</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Acompanhamento da evolução</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Suporte para dúvidas</li>
+            </ul>
+            <a class="btn btn-secondary" href="#agendar" data-plan="start" style="width: 100%;">Quero este plano</a>
+          </article>
+
+          <article class="plan" style="position: relative; display: flex; flex-direction: column; gap: 24px; padding: 32px; background: #0F1210; border: 2px solid #3DEB4C; border-radius: 16px;">
+            <span style="position: absolute; top: -15px; left: 30px; display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 999px; background: #3DEB4C; color: #0B160C; font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Recomendado</span>
+            <div class="plan-head" style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px;">
+                <h3 class="display" style="font-size: 40px; line-height: 44px; color: #F2F5F2;">Performance</h3>
+                <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; line-height: 24px; color: #3DEB4C;">3x/sem</span>
+              </div>
+              <p class="body" style="color: #B3BCB4;">O equilíbrio entre frequência e recuperação para acelerar os resultados.</p>
+            </div>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 4px;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 48px; line-height: 52px; color: #F2F5F2;">R$ 560</span><span style="font-size: 16px; line-height: 24px; color: #B3BCB4;">/mês</span></p>
+            <ul style="list-style: none; margin: 0; padding: 24px 0 0; border-top: 1px solid rgba(242,245,242,0.12); display: flex; flex-direction: column; gap: 12px; flex-grow: 1;">
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Avaliação física completa</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Treinos personalizados</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Ajustes periódicos</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Acompanhamento contínuo</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Suporte pelo WhatsApp</li>
+            </ul>
+            <a class="btn btn-primary" href="#agendar" data-plan="performance" style="width: 100%;">Quero este plano</a>
+          </article>
+
+          <article class="plan" style="display: flex; flex-direction: column; gap: 24px; padding: 32px; background: #0F1210; border: 1px solid rgba(242,245,242,0.12); border-radius: 16px;">
+            <div class="plan-head" style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px;">
+                <h3 class="display" style="font-size: 40px; line-height: 44px; color: #F2F5F2;">Elite</h3>
+                <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; line-height: 24px; color: #3DEB4C;">5x/sem</span>
+              </div>
+              <p class="body" style="color: #B3BCB4;">Para quem treina com metas de performance e quer ajustes toda semana.</p>
+            </div>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 4px;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 48px; line-height: 52px; color: #F2F5F2;">R$ 940</span><span style="font-size: 16px; line-height: 24px; color: #B3BCB4;">/mês</span></p>
+            <ul style="list-style: none; margin: 0; padding: 24px 0 0; border-top: 1px solid rgba(242,245,242,0.12); display: flex; flex-direction: column; gap: 12px; flex-grow: 1;">
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Planejamento individual</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Treinos personalizados</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Ajustes semanais</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Suporte prioritário</li>
+              <li style="display: grid; grid-template-columns: 20px 1fr; gap: 12px; font-size: 16px; line-height: 24px; color: #D3DAD4;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 2px;"><path d="M20 6 9 17l-5-5"></path></svg>Estratégias de performance</li>
+            </ul>
+            <a class="btn btn-secondary" href="#agendar" data-plan="elite" style="width: 100%;">Quero este plano</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre: foto de ponta a ponta -->
+    <section id="sobre" aria-labelledby="sobre-title" class="about" style="background: #0F1210;">
+      <div class="about-media">
+        <img data-anim="parallax" src="images/diego.webp" width="900" height="1599" loading="lazy" alt="Diego, personal trainer, de braços cruzados na academia">
+      </div>
+      <div class="section" style="display: flex; flex-direction: column; justify-content: center; gap: 32px; padding: 128px clamp(16px, 6vw, 96px);">
+        <p style="margin: 0; display: inline-flex; align-items: center; gap: 12px; font-size: 16px; line-height: 24px; font-weight: 600; color: #F2F5F2;"><span aria-hidden="true" style="display: inline-block; width: 32px; height: 4px; border-radius: 4px; background: #3DEB4C;"></span>Diego, seu personal trainer</p>
+        <h2 id="sobre-title" class="h2" style="max-width: 14ch;">Resultado vem de <span class="hl">constância</span>, não de sofrimento</h2>
+        <p class="lead" style="color: #B3BCB4;">Passei anos ajudando pessoas a recuperar a confiança pelo movimento. Desse trabalho saiu o método que uso hoje: ciência do exercício com acompanhamento de perto.</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+          <li style="display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 1px solid rgba(242,245,242,0.12);">
+            <span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: rgba(61,235,76,0.14);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3h15"></path><path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"></path><path d="M6 14h12"></path></svg></span>
+            <p style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; color: #F2F5F2;">Base científica</p>
+            <p class="body" style="color: #B3BCB4;">Cada exercício tem um motivo para estar no seu treino.</p>
+          </li>
+          <li style="display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 1px solid rgba(242,245,242,0.12);">
+            <span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: rgba(61,235,76,0.14);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span>
+            <p style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; color: #F2F5F2;">Acompanhamento de perto</p>
+            <p class="body" style="color: #B3BCB4;">Você não fica sozinho entre um treino e outro.</p>
+          </li>
+          <li style="display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 1px solid rgba(242,245,242,0.12);">
+            <span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: rgba(61,235,76,0.14);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3DEB4C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></span>
+            <p style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; color: #F2F5F2;">No seu ritmo</p>
+            <p class="body" style="color: #B3BCB4;">A intensidade sobe quando o seu corpo estiver pronto.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Agendar: seção verde -->
+    <section id="agendar" class="section" aria-labelledby="agendar-title" style="position: relative; overflow: hidden; padding-top: 128px; padding-bottom: 128px; background: #3DEB4C; color: #0F1210;">
+      <svg aria-hidden="true" viewBox="0 0 600 600" fill="none" style="position: absolute; left: -120px; bottom: -160px; width: 640px; height: 640px; opacity: 0.12; overflow: visible;">
+        <path d="M0 600 L300 0M120 600 L420 0M240 600 L540 0M360 600 L660 0" stroke="#0F1210" stroke-width="28" stroke-linecap="round"></path>
+      </svg>
+      <div class="container form-split" style="position: relative;">
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <h2 id="agendar-title" class="h2 h2-xl" style="color: #0F1210;"><span class="nowrap-line">Sua avaliação</span><span class="nowrap-line">é por</span><span class="nowrap-line">minha conta</span></h2>
+          <p class="lead" style="color: #1F3A21; font-weight: 500; max-width: 40ch;">Preencha o formulário e eu te chamo no WhatsApp para combinar o melhor horário. Sem compromisso.</p>
+          <ul style="list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 18px; line-height: 24px; font-weight: 600; color: #0F1210;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F1210" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Avaliação física completa e gratuita</li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 18px; line-height: 24px; font-weight: 600; color: #0F1210;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F1210" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Você escolhe o plano depois da conversa</li>
+          </ul>
+        </div>
+        <div aria-live="polite">
+          <div class="form-card" id="form-success" hidden style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 40px 32px; background: #0F1210; border-radius: 16px; box-shadow: 0 24px 48px rgba(15,18,16,0.28);">
+              <span class="t-success-check" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 999px; background: #3DEB4C;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B160C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              </span>
+              <h3 class="display" style="font-size: 36px; line-height: 40px; color: #F2F5F2;">Pedido recebido<span id="sent-name"></span></h3>
+              <p class="body" style="max-width: 44ch; color: #B3BCB4;">Vou te chamar no WhatsApp para combinar o dia e o horário da sua avaliação.</p>
+              <button type="button" class="btn btn-secondary" id="form-reset">Enviar outro pedido</button>
+            </div>
+          <form action="#" class="form-card" id="lead-form" style="display: flex; flex-direction: column; gap: 24px; padding: 32px; background: #0F1210; border-radius: 16px; box-shadow: 0 24px 48px rgba(15,18,16,0.28);">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="f-nome" class="field-label">Nome</label>
+                <input id="f-nome" name="nome" class="input" type="text" autocomplete="name" placeholder="Seu nome completo" required="">
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="f-whats" class="field-label">WhatsApp</label>
+                <input id="f-whats" name="whatsapp" class="input" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9()+ -]{10,20}" title="Digite o número com DDD, por exemplo (11) 99999-9999" placeholder="(11) 99999-9999" required="">
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="f-email" class="field-label">E-mail <span style="color: #8F998F; font-weight: 400;">(opcional)</span></label>
+                <input id="f-email" name="email" class="input" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="voce@email.com">
+              </div>
+              <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+                <legend class="field-label" style="padding: 0; margin-bottom: 8px;">Objetivo principal</legend>
+                <div class="goals" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+                  <label class="goal"><input type="radio" name="objetivo" value="emagrecimento" required="">Emagrecimento</label>
+                  <label class="goal"><input type="radio" name="objetivo" value="hipertrofia">Ganhar massa</label>
+                  <label class="goal"><input type="radio" name="objetivo" value="mobilidade">Mobilidade</label>
+                  <label class="goal"><input type="radio" name="objetivo" value="performance">Performance</label>
+                </div>
+              </fieldset>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="f-plano" class="field-label">Plano de interesse</label>
+                <div style="position: relative;">
+                  <select id="f-plano" name="plano" class="input" >
+                    <option value="">Ainda não sei</option>
+                    <option value="start">Start · 2x por semana</option>
+                    <option value="performance">Performance · 3x por semana</option>
+                    <option value="elite">Elite · 5x por semana</option>
+                  </select>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B3BCB4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; right: 12px; top: 12px; pointer-events: none;"><path d="m6 9 6 6 6-6"></path></svg>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 8px;">
+                <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" style="width: 100%;">Agendar avaliação grátis</button>
+                <p style="margin: 0; font-size: 14px; line-height: 20px; color: #B3BCB4; text-align: center;">Seus dados são usados só para marcar a avaliação.</p>
+                <!-- Trocar 55NUMERO pelo WhatsApp do Diego (DDI + DDD + número) -->
+                <a class="btn-link" href="https://wa.me/55NUMERO?text=Oi%20Diego%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20gratuita" target="_blank" rel="noopener">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                  Prefiro chamar no WhatsApp
+                </a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cta-bar" id="cta-bar" aria-hidden="true">
+    <a class="btn btn-primary" href="#agendar" tabindex="-1" style="width: 100%;">Agendar avaliação grátis</a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer style="background: #0F1210; overflow: hidden;">
+    <div class="container footer-top" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding-top: 64px; padding-bottom: 32px;">
+      <p style="margin: 0; font-size: 16px; line-height: 24px; color: #B3BCB4; max-width: 40ch;">Treino personalizado com acompanhamento de perto.</p>
+      <a class="btn btn-primary" href="#agendar">Agendar avaliação grátis</a>
+    </div>
+    <div class="container" aria-hidden="true">
+      <p class="wordmark" translate="no" style="text-align: center;">Diego Fit</p>
+    </div>
+    <div class="container" style="padding-bottom: 32px;">
+      <p style="margin: 0; padding-top: 24px; border-top: 1px solid rgba(242,245,242,0.12); font-size: 14px; line-height: 20px; color: #8F998F; text-align: center;">© 2026 Diego Fit. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</div>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
